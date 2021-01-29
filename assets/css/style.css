@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body {
   overflow-x: hidden;
@@ -569,7 +570,7 @@ ul {
 }
 
 #first {
-  padding-bottom: 50px;
+  padding-bottom: 160px;
   overflow: hidden;
 }
 
@@ -749,7 +750,7 @@ ul {
 }
 
 @media only screen and (max-width: 992px) {
-  #first .banner-img {
+  #first .banner {
     display: none;
   }
 }
@@ -811,27 +812,98 @@ ul {
   }
 }
 
-.banner-search .search {
+.banner-search {
   position: relative;
+  top: -200px;
+  z-index: 1;
+}
+
+.banner-search .search {
   background-color: #fff;
   display: inline-block;
   border-radius: 10px;
-  padding: 20px 20px 12px;
-  width: 300px;
+  padding: 23px 22px;
+  position: relative;
+  box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.041);
+}
+
+.banner-search .search .banner-search-shape1 {
+  top: -68px;
+  left: -107px;
+  z-index: -1;
+}
+
+.banner-search .search .banner-search-shape2 {
+  bottom: -77px;
+  right: -55px;
+  z-index: -1;
+}
+
+.banner-search .search form {
+  display: flex;
+  align-items: center;
+}
+
+.banner-search .search form .select-options {
+  display: flex;
+}
+
+.banner-search .search form .select-options .select-option {
+  width: 165px;
+}
+
+.banner-search .search form .select-options .select-option .nice-select {
+  color: #000;
+  border: none;
+  height: auto;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Fira Sans";
+}
+
+.banner-search .search form .select-options .select-option .nice-select::after {
+  top: 0px;
+  right: 20px;
+  height: auto;
+  border: none;
+  margin-top: 0;
+  font-size: 12px;
+  content: "";
+  font-weight: 900;
+  transform: rotate(0);
+  font-family: "Font Awesome 5 Free";
 }
 
 .banner-search .search button {
   border: none;
 }
 
+.banner-search .search button i {
+  padding-right: 10px;
+}
+
 .banner-search .search .btn-usual {
   background-color: #0000fe;
   border-radius: 10px;
   width: 177px;
-  height: 49px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-search .search .btn-usual::after {
   background-color: #ff5520;
+}
+
+.banner-search .search-text {
+  margin-top: 20px;
+}
+
+.banner-search .search-text a {
+  color: #0000fe;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-left: 9px;
 }
 /*# sourceMappingURL=style.css.map */

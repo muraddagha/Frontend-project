@@ -29,4 +29,6 @@ $(document).ready(function () {
     $(".signup-btn").css("background-color", "white").css("color", "#000");
     $(this).css("background-color", "#0000fe").css("color", "white");
   });
+
+  $("select").niceSelect();
 });

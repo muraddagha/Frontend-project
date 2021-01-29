@@ -1,36 +1,81 @@
 .banner-search {
+  position: relative;
+  top: -200px;
+  z-index: 1;
   .search {
-    position: relative;
     background-color: #fff;
     display: inline-block;
     border-radius: 10px;
-    padding: 20px 20px 12px;
-    width: 300px;
+    padding: 23px 22px;
+    position: relative;
+    box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.041);
     .banner-search-shape1 {
-      top: -141px;
-      left: -58px;
-      z-index: 1;
+      top: -68px;
+      left: -107px;
+      z-index: -1;
     }
     .banner-search-shape2 {
-      bottom: -13px;
-      right: -70px;
-      z-index: 1;
+      bottom: -77px;
+      right: -55px;
+      z-index: -1;
     }
-    .select-options {
-      .select-option {
+    form {
+      display: flex;
+      align-items: center;
+      .select-options {
+        display: flex;
+        .select-option {
+          width: 165px;
+          .nice-select {
+            color: #000;
+            border: none;
+            height: auto;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Fira Sans";
+            &::after {
+              top: 0px;
+              right: 20px;
+              height: auto;
+              border: none;
+              margin-top: 0;
+              font-size: 12px;
+              content: "";
+              font-weight: 900;
+              transform: rotate(0);
+              font-family: "Font Awesome 5 Free";
+            }
+          }
+        }
       }
     }
+
     button {
       border: none;
+      i {
+        padding-right: 10px;
+      }
     }
     .btn-usual {
       background-color: $color-blue;
       border-radius: 10px;
       width: 177px;
-      height: 49px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       &::after {
         background-color: $color-orange;
       }
+    }
+  }
+  .search-text {
+    margin-top: 20px;
+    a {
+      color: $color-blue;
+      text-decoration: underline;
+      font-weight: 700;
+      margin-left: 9px;
     }
   }
 }
