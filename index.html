@@ -102,7 +102,7 @@
                 </a>
               </li>
               <li>
-                <a href="">
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fas fa-user"></i>
                 </a>
               </li>
@@ -119,7 +119,6 @@
             <div class="mobile-logo">
               <img src="/assets/img/logo foot.png" alt="" />
             </div>
-
             <ul class="mobile-navbar">
               <li class="mobile-dropdown">
                 <a>Home</a>
@@ -157,14 +156,18 @@
               <li class="mobile-dropdown">
                 <a>Pages</a>
                 <span class="fa fa-angle-down"></span>
-                <ul class="mobile-dropdown-content"">
+                <ul class="mobile-dropdown-content">
                   <li><a target="_blank" href="gallery.html">Gallery</a></li>
                   <li><a target="_blank" href="contact.html">Contact</a></li>
                   <li><a target="_blank" href="event.html">Event</a></li>
-                  <li><a target="_blank" href="event-details.html">Event Details</a></li>
+                  <li>
+                    <a target="_blank" href="event-details.html"
+                      >Event Details</a
+                    >
+                  </li>
                   <li><a target="_blank" href="faq.html">Faq</a></li>
                   <li><a target="_blank" href="404.html">404</a></li>
-               </ul>
+                </ul>
               </li>
               <li class="mobile-dropdown">
                 <a>Blog</a>
@@ -172,17 +175,31 @@
                 <ul class="mobile-dropdown-content">
                   <li><a target="_blank" href="blog-1.html">Blog 1</a></li>
                   <li><a target="_blank" href="blog-2.html">Blog 2</a></li>
-                  <li><a target="_blank" href="blog-details-1.html">Blog Details 1</a></li>
-                  <li><a target="_blank" href="blog-details-2.html">Blog Details 2</a></li>
-               </ul>
+                  <li>
+                    <a target="_blank" href="blog-details-1.html"
+                      >Blog Details 1</a
+                    >
+                  </li>
+                  <li>
+                    <a target="_blank" href="blog-details-2.html"
+                      >Blog Details 2</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="mobile-dropdown">
                 <a>Instructor</a>
                 <span class="fa fa-angle-down"></span>
                 <ul class="mobile-dropdown-content">
-                  <li><a target="_blank" href="instructor.html">Instructor</a></li>
-                  <li><a target="_blank" href="instructor-details.html">Instructor Details</a></li>
-               </ul>
+                  <li>
+                    <a target="_blank" href="instructor.html">Instructor</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="instructor-details.html"
+                      >Instructor Details</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -191,7 +208,81 @@
     </header>
     <main></main>
     <footer></footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-head-content">
+              <a href="#">
+                <img src="/assets/img/logo foot.png" alt="" />
+              </a>
+              <p>
+                Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in
+                voluptate velit esse
+              </p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-signup-login">
+              <ul class="modal-signup-login-btn">
+                <li class="login-btn">Login</li>
+                <li class="signup-btn">Sign Up</li>
+              </ul>
+              <div class="modal-tab-content">
+                <div class="login-tab">
+                  <form action="#">
+                    <input type="text" placeholder="Username or email" />
+                    <input type="password" placeholder="Password" />
+                    <div class="login-label">
+                      <span>
+                        <input type="checkbox" />
+                        Remember me
+                      </span>
+                      <a href="#">Forget Password?</a>
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                  <p>
+                    Don’t have any account?
+                    <a href="#">Signup</a>
+                  </p>
+                </div>
+                <div class="signup-tab">
+                  <form action="#">
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                    <input type="text" placeholder="Email Adresses" />
+                    <input type="text" placeholder="Username" />
+                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Confrim Password" />
+                    <div class="login-label">
+                      <span>
+                        <input type="checkbox" />
+                        By clicking signup you are agree to our terms of service
+                      </span>
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                  <p>
+                    Already have an account?
+                    <a href="#">Log in</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
