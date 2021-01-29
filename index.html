@@ -113,6 +113,7 @@
           </div>
         </div>
         <div class="mobile-menu">
+          <div class="menu-overlay"></div>
           <div class="menu-content">
             <div class="close-btn"><i class="fas fa-times"></i></div>
             <div class="mobile-logo">
@@ -121,9 +122,9 @@
 
             <ul class="mobile-navbar">
               <li class="mobile-dropdown">
-                <a href="">Home</a>
+                <a>Home</a>
                 <span class="fa fa-angle-down"></span>
-                <ul>
+                <ul class="mobile-dropdown-content">
                   <li>
                     <a href=""> Home Page 1 </a>
                   </li>
@@ -142,20 +143,46 @@
                 <a href="">About</a>
               </li>
               <li class="mobile-dropdown">
-                <a href="">Course</a>
+                <a>Course</a>
                 <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li><a target="_blank" href="course.html">Course</a></li>
+                  <li>
+                    <a target="_blank" href="course-details.html"
+                      >Course Details</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="mobile-dropdown">
-                <a href="">Pages</a>
+                <a>Pages</a>
                 <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content"">
+                  <li><a target="_blank" href="gallery.html">Gallery</a></li>
+                  <li><a target="_blank" href="contact.html">Contact</a></li>
+                  <li><a target="_blank" href="event.html">Event</a></li>
+                  <li><a target="_blank" href="event-details.html">Event Details</a></li>
+                  <li><a target="_blank" href="faq.html">Faq</a></li>
+                  <li><a target="_blank" href="404.html">404</a></li>
+               </ul>
               </li>
               <li class="mobile-dropdown">
-                <a href="">Blog</a>
+                <a>Blog</a>
                 <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li><a target="_blank" href="blog-1.html">Blog 1</a></li>
+                  <li><a target="_blank" href="blog-2.html">Blog 2</a></li>
+                  <li><a target="_blank" href="blog-details-1.html">Blog Details 1</a></li>
+                  <li><a target="_blank" href="blog-details-2.html">Blog Details 2</a></li>
+               </ul>
               </li>
               <li class="mobile-dropdown">
-                <a href="">Instructor</a>
+                <a>Instructor</a>
                 <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li><a target="_blank" href="instructor.html">Instructor</a></li>
+                  <li><a target="_blank" href="instructor-details.html">Instructor Details</a></li>
+               </ul>
               </li>
             </ul>
           </div>
@@ -164,6 +191,7 @@
     </header>
     <main></main>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

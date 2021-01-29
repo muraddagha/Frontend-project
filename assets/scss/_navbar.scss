@@ -171,9 +171,20 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
     left: 0;
     top: 0;
+    .menu-overlay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      left: 0;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease-in-out;
+    }
     .menu-content {
       position: fixed;
       justify-content: center;
@@ -182,6 +193,9 @@
       width: 301px;
       height: 100%;
       background-color: #000;
+      transform: translateX(100%);
+      transition: all 0.5s ease-in-out;
+      touch-action: none;
       .close-btn {
         cursor: pointer;
         color: #e3002a;
@@ -200,6 +214,7 @@
           width: 100%;
           display: block;
           transition: 0.3s all ease-in-out;
+          cursor: pointer;
           a {
             padding: 0;
             width: 100%;
@@ -222,20 +237,23 @@
             height: 30px;
             padding: 5px 10px;
           }
-          li {
-            border: none;
-            padding: 1px 20px;
-            line-height: 1;
-            a {
-              padding: 0;
-              width: 100%;
-              color: #fff;
-              display: block;
-              font-weight: 600;
-              font-size: 14px;
-              padding: 10px 30px 10px 0;
-              text-transform: capitalize;
-              border-bottom: 1px solid rgba(78, 78, 78, 0.41);
+          .mobile-dropdown-content {
+            display: none;
+            li {
+              border: none;
+              padding: 1px 20px;
+              line-height: 1;
+              a {
+                padding: 0;
+                width: 100%;
+                color: #fff;
+                display: block;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 10px 30px 10px 0;
+                text-transform: capitalize;
+                border-bottom: 1px solid rgba(78, 78, 78, 0.41);
+              }
             }
           }
         }
