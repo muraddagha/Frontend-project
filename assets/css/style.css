@@ -374,6 +374,9 @@ ul {
   position: relative;
   z-index: 1;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-usual:hover::after {
@@ -706,9 +709,11 @@ ul {
   border-radius: 100%;
   transition: 0.3s all ease-in-out;
   background-color: #0000fe;
-  text-align: center;
   color: white;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #first .banner-content .first-content .buttons .btn-play:hover {
