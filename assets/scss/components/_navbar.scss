@@ -4,7 +4,7 @@
 .navigation-bar {
   background-color: white;
   display: flex;
-  padding: 1rem 10px 10px;
+  padding: 1rem 15px 10px;
 
   .navbar-content {
     width: 100%;
@@ -18,7 +18,7 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      padding-top: 15px;
+      padding-top: 20px;
       margin-left: 30px;
       padding-left: 5px;
       li {
@@ -138,17 +138,18 @@
       li {
         padding-top: 15px;
         position: relative;
-        padding-left: 10px;
+        padding-left: 15px;
         &:first-child {
           &::after {
             content: "";
             background-color: #d9d9d9;
-            width: 1px;
+            width: 2px;
             height: 18px;
             position: absolute;
-            left: 33px;
+            left: 26px;
             top: 18px;
           }
+          padding-left: 0;
         }
         a {
           color: #5a5a5a;
