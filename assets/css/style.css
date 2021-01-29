@@ -716,6 +716,10 @@ ul {
   justify-content: center;
 }
 
+#first .banner-content .first-content .buttons .btn-play:focus {
+  outline: none;
+}
+
 #first .banner-content .first-content .buttons .btn-play:hover {
   background-color: #e3002a;
 }

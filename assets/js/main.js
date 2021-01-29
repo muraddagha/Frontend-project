@@ -31,4 +31,15 @@ $(document).ready(function () {
   });
 
   $("select").niceSelect();
+
+  $('[data-fancybox="video"]').fancybox({
+    buttons: ["share", "fullScreen", "close"],
+
+    autoplay: "autoplay",
+    iframe: {
+      css: {
+        width: "80%",
+      },
+    },
+  });
 });

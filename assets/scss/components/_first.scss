@@ -126,6 +126,9 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          &:focus {
+            outline: none;
+          }
           &:hover {
             background-color: #e3002a;
           }
