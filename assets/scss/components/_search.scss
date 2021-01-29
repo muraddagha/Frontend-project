@@ -19,32 +19,29 @@
       right: -55px;
       z-index: -1;
     }
-    form {
-      display: flex;
-      align-items: center;
-      .select-options {
-        display: flex;
-        .select-option {
-          width: 165px;
-          .nice-select {
-            color: #000;
-            border: none;
+    .select-options {
+      float: left;
+      .select-option {
+        width: 165px;
+        display: inline-block;
+        .nice-select {
+          color: #000;
+          border: none;
+          height: auto;
+          font-size: 18px;
+          font-weight: 700;
+          font-family: "Fira Sans";
+          &::after {
+            top: 0px;
+            right: 20px;
             height: auto;
-            font-size: 18px;
-            font-weight: 700;
-            font-family: "Fira Sans";
-            &::after {
-              top: 0px;
-              right: 20px;
-              height: auto;
-              border: none;
-              margin-top: 0;
-              font-size: 12px;
-              content: "";
-              font-weight: 900;
-              transform: rotate(0);
-              font-family: "Font Awesome 5 Free";
-            }
+            border: none;
+            margin-top: 0;
+            font-size: 12px;
+            content: "";
+            font-weight: 900;
+            transform: rotate(0);
+            font-family: "Font Awesome 5 Free";
           }
         }
       }
@@ -76,6 +73,38 @@
       text-decoration: underline;
       font-weight: 700;
       margin-left: 9px;
+    }
+  }
+}
+@media only screen and(max-width:1255px) {
+  .banner-search {
+    text-align: center;
+  }
+}
+@media only screen and(max-width:992px) {
+  .banner-search {
+    .search {
+      .banner-search-shape1,
+      .banner-search-shape2 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .banner-search {
+    .search {
+      .select-options {
+        float: none;
+        .select-option {
+          width: inherit;
+        }
+      }
+      .btn-usual {
+        width: 130px;
+        margin: 0 auto;
+      }
     }
   }
 }

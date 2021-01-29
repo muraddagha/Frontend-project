@@ -839,20 +839,16 @@ ul {
   z-index: -1;
 }
 
-.banner-search .search form {
-  display: flex;
-  align-items: center;
+.banner-search .search .select-options {
+  float: left;
 }
 
-.banner-search .search form .select-options {
-  display: flex;
-}
-
-.banner-search .search form .select-options .select-option {
+.banner-search .search .select-options .select-option {
   width: 165px;
+  display: inline-block;
 }
 
-.banner-search .search form .select-options .select-option .nice-select {
+.banner-search .search .select-options .select-option .nice-select {
   color: #000;
   border: none;
   height: auto;
@@ -861,7 +857,7 @@ ul {
   font-family: "Fira Sans";
 }
 
-.banner-search .search form .select-options .select-option .nice-select::after {
+.banner-search .search .select-options .select-option .nice-select::after {
   top: 0px;
   right: 20px;
   height: auto;
@@ -905,5 +901,31 @@ ul {
   text-decoration: underline;
   font-weight: 700;
   margin-left: 9px;
+}
+
+@media only screen and (max-width: 1255px) {
+  .banner-search {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .banner-search .search .banner-search-shape1,
+  .banner-search .search .banner-search-shape2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-search .search .select-options {
+    float: none;
+  }
+  .banner-search .search .select-options .select-option {
+    width: inherit;
+  }
+  .banner-search .search .btn-usual {
+    width: 130px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
