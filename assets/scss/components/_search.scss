@@ -1,0 +1,36 @@
+.banner-search {
+  .search {
+    position: relative;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 20px 12px;
+    width: 300px;
+    .banner-search-shape1 {
+      top: -141px;
+      left: -58px;
+      z-index: 1;
+    }
+    .banner-search-shape2 {
+      bottom: -13px;
+      right: -70px;
+      z-index: 1;
+    }
+    .select-options {
+      .select-option {
+      }
+    }
+    button {
+      border: none;
+    }
+    .btn-usual {
+      background-color: $color-blue;
+      border-radius: 10px;
+      width: 177px;
+      height: 49px;
+      &::after {
+        background-color: $color-orange;
+      }
+    }
+  }
+}
