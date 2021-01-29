@@ -1,6 +1,7 @@
 #first {
   background-color: $bg-gray;
-  padding-bottom: 140px;
+  padding-bottom: 190px;
+  overflow: hidden;
   .first-dot-square {
     z-index: 1;
   }
@@ -138,6 +139,18 @@
           animation-delay: 2.6s;
         }
       }
+    }
+    .background-word {
+      left: 0;
+      opacity: 0.05;
+      z-index: -1;
+      line-height: 1;
+      color: #00003d;
+      font-weight: 700;
+      font-size: 265px;
+      position: absolute;
+      font-family: "Fira Sans";
+      bottom: -209px;
     }
   }
 }

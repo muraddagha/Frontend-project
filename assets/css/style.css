@@ -570,7 +570,8 @@ ul {
 
 #first {
   background-color: #f7f7f7;
-  padding-bottom: 140px;
+  padding-bottom: 190px;
+  overflow: hidden;
 }
 
 #first .first-dot-square {
@@ -728,6 +729,19 @@ ul {
 
 #first .first-content .buttons .btn-play .border-delay-3 {
   animation-delay: 2.6s;
+}
+
+#first .first-content .background-word {
+  left: 0;
+  opacity: 0.05;
+  z-index: -1;
+  line-height: 1;
+  color: #00003d;
+  font-weight: 700;
+  font-size: 265px;
+  position: absolute;
+  font-family: "Fira Sans";
+  bottom: -209px;
 }
 
 @media only screen and (max-width: 992px) {
