@@ -1,2 +1,44 @@
 #categories {
+  padding-bottom: 2rem;
+  .categories-slider {
+    .category-item {
+      background-color: black;
+      border-radius: 10px;
+      padding: 25px 40px;
+      padding-bottom: 0;
+      margin-bottom: 10px;
+      .category-item-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .category-icon {
+          line-height: 1;
+          margin-right: 15px;
+          transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
+          i {
+            font-size: 45px;
+            color: #ff5520;
+          }
+        }
+        .category-text {
+          color: white;
+          h4 {
+            margin-bottom: 0;
+            font-weight: 700;
+            font-family: "Fira Sans";
+          }
+          span {
+            color: #ababab;
+          }
+        }
+      }
+      .category-item-body {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }

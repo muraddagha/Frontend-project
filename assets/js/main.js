@@ -42,4 +42,11 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".categories-slider").owlCarousel({
+    loop: true,
+    items: 3,
+    dots: false,
+    margin: 30,
+  });
 });
