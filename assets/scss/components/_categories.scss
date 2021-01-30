@@ -37,6 +37,19 @@
         img {
           max-width: 100%;
           height: auto;
+          transition: 0.3s all ease-in-out;
+        }
+      }
+      &:hover {
+        .category-item-header {
+          .category-icon {
+            transform: rotateY(360deg);
+          }
+        }
+        .category-item-body {
+          img {
+            filter: grayscale(1);
+          }
         }
       }
     }

@@ -1040,5 +1040,14 @@ ul {
 #categories .categories-slider .category-item .category-item-body img {
   max-width: 100%;
   height: auto;
+  transition: 0.3s all ease-in-out;
+}
+
+#categories .categories-slider .category-item:hover .category-item-header .category-icon {
+  transform: rotateY(360deg);
+}
+
+#categories .categories-slider .category-item:hover .category-item-body img {
+  filter: grayscale(1);
 }
 /*# sourceMappingURL=style.css.map */
