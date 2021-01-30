@@ -50,3 +50,58 @@
     background-color: #0000fe;
   }
 }
+
+.section-title {
+  position: relative;
+  max-width: 590px;
+  margin: 0 auto;
+  text-align: center;
+  .background-title {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    opacity: 0.04;
+    color: #53536c;
+    line-height: 1;
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 0;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  .section-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-blue;
+    padding: 0px 15px;
+    position: relative;
+  }
+  .section-bigtitle {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.125;
+    padding: 15px 0px 20px;
+  }
+}
+
+@media only screen and(max-width:560px) {
+  .section-title {
+    .background-title {
+      font-size: 77px;
+    }
+    .section-bigtitle {
+      font-size: 30px;
+    }
+  }
+}
+@media only screen and(max-width:396px) {
+  .section-title {
+    .background-title {
+      font-size: 64px;
+    }
+    .section-bigtitle {
+      font-size: 24px;
+    }
+  }
+}
