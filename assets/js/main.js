@@ -46,7 +46,16 @@ $(document).ready(function () {
   $(".categories-slider").owlCarousel({
     loop: true,
     items: 3,
-    dots: false,
+    dots: true,
     margin: 30,
+    responsive: {
+      0: { items: 1 },
+      705: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
   });
 });
