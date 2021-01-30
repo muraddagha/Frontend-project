@@ -1105,7 +1105,7 @@ ul {
 
 #course {
   background-color: #f7f7f7;
-  padding-top: 110px;
+  padding: 110px 0;
 }
 
 #course .section-title .background-title {
@@ -1307,6 +1307,106 @@ ul {
   }
   51% {
     opacity: 1;
+  }
+}
+
+#registration {
+  position: relative;
+}
+
+#registration .container {
+  max-width: 1200px;
+}
+
+#registration .container .registration-content {
+  position: relative;
+  z-index: 1;
+  padding: 45px;
+  box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.021);
+  background-color: #fff;
+}
+
+#registration .container .registration-content .girl {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#registration .container .registration-content .registration-text {
+  max-width: 450px;
+}
+
+#registration .container .registration-content .registration-text h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+#registration .container .registration-content .registration-text h3 span {
+  color: #ff5520;
+}
+
+#registration .container .registration-content .registration-text p {
+  color: #c6c6c6;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+#registration .container .registration-content .registration-text .btn-usual {
+  height: 45px;
+  width: 140px;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  line-height: 45px;
+  overflow: hidden;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #00a4ff;
+}
+
+#registration .container .registration-content .registration-text .btn-usual::after {
+  background-color: #ff5520;
+}
+
+#registration .container .registration-content::before {
+  content: "";
+  background-image: url("/assets/img/reklam banner.png");
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#registration .container::before {
+  content: "";
+  height: 210px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 992px) {
+  #registration .registration-content .girl {
+    display: none;
+  }
+  #registration .registration-content::before {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  #registration .registration-content {
+    padding: 19px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

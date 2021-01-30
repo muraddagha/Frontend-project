@@ -58,4 +58,21 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".testimonials-slider").owlCarousel({
+    loop: true,
+    items: 3,
+    dots: true,
+    margin: 30,
+    items: 1,
+    // responsive: {
+    //   0: { items: 1 },
+    //   705: {
+    //     items: 2,
+    //   },
+    //   1200: {
+    //     items: 3,
+    //   },
+    // },
+  });
 });

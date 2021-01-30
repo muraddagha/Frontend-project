@@ -1,0 +1,94 @@
+#registration {
+  position: relative;
+  .container {
+    max-width: 1200px;
+
+    .registration-content {
+      position: relative;
+      z-index: 1;
+      padding: 45px;
+      box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.021);
+      background-color: #fff;
+      .girl {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .registration-text {
+        max-width: 450px;
+        h3 {
+          color: #fff;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 1.167;
+          padding-bottom: 20px;
+          margin: 0;
+          span {
+            color: $color-orange;
+          }
+        }
+        p {
+          color: #c6c6c6;
+          padding-bottom: 25px;
+          margin: 0;
+        }
+        .btn-usual {
+          height: 45px;
+          width: 140px;
+          color: #fff;
+          display: block;
+          font-size: 15px;
+          line-height: 45px;
+          overflow: hidden;
+          font-weight: 700;
+          text-align: center;
+          border-radius: 40px;
+          background-color: #00a4ff;
+          &::after {
+            background-color: $color-orange;
+          }
+        }
+      }
+      &::before {
+        content: "";
+        background-image: url("/assets/img/reklam banner.png");
+        position: absolute;
+        height: 100%;
+        width: 70%;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+    &::before {
+      content: "";
+      height: 210px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f7f7f7;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #registration {
+    .registration-content {
+      .girl {
+        display: none;
+      }
+      &::before {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 555px) {
+  #registration {
+    .registration-content {
+      padding: 19px !important;
+    }
+  }
+}
