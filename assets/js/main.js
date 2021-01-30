@@ -63,8 +63,9 @@ $(document).ready(function () {
     loop: true,
     items: 3,
     dots: true,
-    margin: 30,
-    items: 1,
+    margin: 40,
+    items: 4,
+
     // responsive: {
     //   0: { items: 1 },
     //   705: {
