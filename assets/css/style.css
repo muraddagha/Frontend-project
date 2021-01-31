@@ -17,6 +17,43 @@ ul {
   color: #0101fe;
 }
 
+.owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.owl-item.active {
+  opacity: 1;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+  width: 38px;
+  background-color: #0000fe;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+  width: 28px;
+  height: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 30%;
+  display: inline-block;
+  background-color: #ececed;
+  transition: 0.3s all ease-in-out;
+}
+
+.owl-carousel .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -1729,40 +1766,131 @@ ul {
   color: #ff5520;
 }
 
-#latset-news .latset-news-slider .owl-item {
-  opacity: 0;
-  transition: opacity 500ms;
+#subscribe-form {
+  background-color: #f7f7f7;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1;
 }
 
-#latset-news .latset-news-slider .owl-item.active {
-  opacity: 1;
+#subscribe-form .subscribe-content {
+  align-items: center;
+  background-color: black;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 35px 40px;
+  margin: 0 auto;
 }
 
-#latset-news .latset-news-slider .owl-dots {
-  text-align: center;
+#subscribe-form .subscribe-content .newsletter-text h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-family: "Fira Sans", sans-serif;
 }
 
-#latset-news .latset-news-slider .owl-dots .owl-dot.active {
-  width: 38px;
-  background-color: #0000fe;
+#subscribe-form .subscribe-content .newsletter-text p {
+  color: #bbbbbb;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
-#latset-news .latset-news-slider .owl-dots .owl-dot {
-  width: 28px;
-  height: 5px;
-  margin: 0px 5px;
-  cursor: pointer;
-  border-radius: 30%;
-  display: inline-block;
-  background-color: #ececed;
+#subscribe-form .subscribe-content .newsletter-text p span {
+  margin-left: 5px;
+}
+
+#subscribe-form .subscribe-content .newsletter-text p span img {
+  padding-bottom: 5px;
+}
+
+#subscribe-form .subscribe-content form {
+  display: flex;
+  align-items: center;
+}
+
+#subscribe-form .subscribe-content form input {
+  height: 48px;
+  width: 100%;
+  border: none;
+  max-width: 320px;
+  padding-left: 20px;
+  background-color: #292929;
+  margin-right: 10px;
+}
+
+#subscribe-form .subscribe-content form button.btn-usual {
+  border-radius: 0;
+  transition: 0.3s all ease-in-out;
+  border: none;
+  width: 145px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#subscribe-form .subscribe-content form button.btn-usual span {
+  margin-left: 10px;
+}
+
+#subscribe-form .subscribe-content form button.btn-usual span i {
   transition: 0.3s all ease-in-out;
 }
 
-#latset-news .latset-news-slider .owl-dots .owl-dot:focus {
+#subscribe-form .subscribe-content form button.btn-usual:focus {
   outline: none;
 }
 
-#latset-news .owl-carousel .owl-stage-outer {
-  overflow: visible;
+#subscribe-form .subscribe-content form button.btn-usual::after {
+  background-color: white;
+}
+
+#subscribe-form .subscribe-content form button.btn-usual:hover {
+  color: black;
+}
+
+#subscribe-form .subscribe-content form button.btn-usual:hover i {
+  animation: toLeftFromRight 0.3s forwards;
+}
+
+#subscribe-form .subscribe-content::before {
+  content: "";
+  background-color: #000a1f;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 490px) {
+  #subscribe-form .subscribe-content .newsletter-text h3 {
+    font-size: 20px;
+  }
+  #subscribe-form .subscribe-content .newsletter-text img {
+    display: none;
+  }
+  #subscribe-form .subscribe-content form input,
+  #subscribe-form .subscribe-content form button {
+    height: 40px !important;
+  }
+}
+
+@keyframes toLeftFromRight {
+  49% {
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+#footer {
+  background-image: url("/assets/img/submit banner.jpg");
 }
 /*# sourceMappingURL=style.css.map */

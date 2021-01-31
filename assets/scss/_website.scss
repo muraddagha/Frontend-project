@@ -12,6 +12,39 @@ ul {
   color: $text-blue;
 }
 
+.owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.owl-item.active {
+  opacity: 1;
+}
+.owl-carousel {
+  .owl-stage-outer {
+    overflow: visible;
+  }
+  .owl-dots {
+    text-align: center;
+    .owl-dot.active {
+      width: 38px;
+      background-color: #0000fe;
+    }
+    .owl-dot {
+      width: 28px;
+      height: 5px;
+      margin: 0px 5px;
+      cursor: pointer;
+      border-radius: 30%;
+      display: inline-block;
+      background-color: #ececed;
+      transition: 0.3s all ease-in-out;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
