@@ -473,6 +473,10 @@ ul {
   padding: 15px 0px 20px;
 }
 
+.pl-40 {
+  padding-left: 40px;
+}
+
 @media only screen and (max-width: 560px) {
   .section-title .background-title {
     font-size: 77px;
@@ -1797,7 +1801,7 @@ ul {
   background-color: #000a1f;
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 113px;
   top: 50%;
   left: 0;
   z-index: -1;
@@ -1831,5 +1835,206 @@ ul {
 
 #footer {
   background-image: url("/assets/img/submit banner.jpg");
+  padding-top: 80px;
+  color: white;
+}
+
+#footer .footer-content {
+  padding-bottom: 85px;
+  border-bottom: 2px solid #383737;
+  line-height: 1.625;
+}
+
+#footer .footer-content p {
+  margin-bottom: 0;
+}
+
+#footer .footer-content .footer-logo {
+  padding-bottom: 18px;
+}
+
+#footer .footer-content .footer-logo img {
+  max-width: 100%;
+}
+
+#footer .footer-content .footer-text {
+  color: #9d9d9d;
+  padding-bottom: 35px;
+}
+
+#footer .footer-content .btn-usual {
+  height: 35px;
+  width: 100px;
+  font-size: 14px;
+  line-height: 35px;
+  transition: 0.3s all ease-in-out;
+}
+
+#footer .footer-content .btn-usual:hover {
+  color: black;
+  transition: 0.3s all ease-in-out;
+}
+
+#footer .footer-content .btn-usual::after {
+  background-color: white;
+}
+
+#footer .footer-content .footer-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+#footer .footer-content .footer-title::after {
+  left: 0;
+  height: 3px;
+  width: 30px;
+  content: "";
+  bottom: -12px;
+  position: absolute;
+  background-color: #ff5520;
+}
+
+#footer .footer-content form {
+  margin-top: 30px;
+  position: relative;
+}
+
+#footer .footer-content form input {
+  height: 45px;
+  width: 100%;
+  padding-left: 20px;
+  border: 2px solid #313131;
+  background-color: transparent;
+}
+
+#footer .footer-content form input::placeholder {
+  color: white;
+  font-size: 14px;
+}
+
+#footer .footer-content form button {
+  background-color: #ff5520;
+  top: 0;
+  right: 0;
+  width: 60px;
+  padding: 0;
+  color: #fff;
+  height: 45px;
+  border: none;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+
+#footer .footer-content form button:focus {
+  outline: none;
+}
+
+#footer .footer-content .contact {
+  padding-top: 17px;
+  padding-bottom: 10px;
+}
+
+#footer .footer-content .contact li {
+  margin-bottom: 10px;
+}
+
+#footer .footer-content .contact li i {
+  float: left;
+  font-size: 14px;
+  color: #ff5520;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#footer .footer-content .contact li a {
+  color: #9d9d9d;
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  max-width: 170px;
+}
+
+#footer .footer-content .open-hours span {
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#footer .footer-content .open-hours p {
+  font-size: 14px;
+  color: #9d9d9d;
+  max-width: 180px;
+}
+
+#footer .social-links {
+  display: flex;
+  margin-top: 22px;
+}
+
+#footer .social-links li {
+  margin-right: 15px;
+}
+
+#footer .social-links li a {
+  color: #494949;
+  transition: 0.3s all ease-in-out;
+}
+
+#footer .social-links li a:hover {
+  color: #ff5520;
+}
+
+#footer .instagram li {
+  width: 75px;
+  margin-bottom: 7px;
+  position: relative;
+  height: 75px;
+  margin-right: 10px;
+  background-color: #000;
+  float: left;
+  transition: 0.3s all ease-in-out;
+}
+
+#footer .instagram li a img {
+  height: auto;
+  max-width: 100%;
+}
+
+#footer .instagram li a i {
+  opacity: 0;
+  left: 0;
+  top: 50%;
+  right: 0;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: 0.3s all ease-in-out;
+}
+
+#footer .instagram li::before {
+  content: "";
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+}
+
+#footer .instagram li:hover::before {
+  opacity: 0.7;
+}
+
+#footer .instagram li:hover a i {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
