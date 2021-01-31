@@ -1558,6 +1558,7 @@ ul {
 #latset-news {
   padding-top: 110px;
   background-color: #f7f7f7;
+  overflow: hidden;
 }
 
 #latset-news .section-title .background-title {
@@ -1726,5 +1727,42 @@ ul {
 
 #latset-news .latset-news-slider .news-item:hover .news-text h3 a {
   color: #ff5520;
+}
+
+#latset-news .latset-news-slider .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+#latset-news .latset-news-slider .owl-item.active {
+  opacity: 1;
+}
+
+#latset-news .latset-news-slider .owl-dots {
+  text-align: center;
+}
+
+#latset-news .latset-news-slider .owl-dots .owl-dot.active {
+  width: 38px;
+  background-color: #0000fe;
+}
+
+#latset-news .latset-news-slider .owl-dots .owl-dot {
+  width: 28px;
+  height: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 30%;
+  display: inline-block;
+  background-color: #ececed;
+  transition: 0.3s all ease-in-out;
+}
+
+#latset-news .latset-news-slider .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+#latset-news .owl-carousel .owl-stage-outer {
+  overflow: visible;
 }
 /*# sourceMappingURL=style.css.map */
