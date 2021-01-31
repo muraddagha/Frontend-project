@@ -1,5 +1,6 @@
 #categories {
   padding-bottom: 3rem;
+  overflow: hidden;
   .categories-slider {
     .category-item {
       position: relative;
@@ -76,26 +77,6 @@
           img {
             filter: grayscale(1);
           }
-        }
-      }
-    }
-    .owl-dots {
-      text-align: center;
-      .owl-dot.active {
-        width: 38px;
-        background-color: #0000fe;
-      }
-      .owl-dot {
-        width: 28px;
-        height: 5px;
-        margin: 0px 5px;
-        cursor: pointer;
-        border-radius: 30%;
-        display: inline-block;
-        background-color: #ececed;
-        transition: 0.3s all ease-in-out;
-        &:focus {
-          outline: none;
         }
       }
     }

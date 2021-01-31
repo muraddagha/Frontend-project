@@ -11,15 +11,14 @@ ul {
 .small-title {
   color: $text-blue;
 }
-
-.owl-item {
-  opacity: 0;
-  transition: opacity 500ms;
-}
-.owl-item.active {
-  opacity: 1;
-}
 .owl-carousel {
+  .owl-item {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  .owl-item.active {
+    opacity: 1;
+  }
   .owl-stage-outer {
     overflow: visible;
   }
@@ -44,7 +43,6 @@ ul {
     }
   }
 }
-
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
