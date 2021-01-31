@@ -1412,6 +1412,7 @@ ul {
 
 #testimonials {
   padding-top: 140px;
+  overflow: hidden;
 }
 
 #testimonials .testimonials-slider {
