@@ -63,17 +63,31 @@ $(document).ready(function () {
     loop: true,
     items: 3,
     dots: true,
-    margin: 40,
-    items: 4,
+    margin: 30,
+    responsive: {
+      0: { items: 1 },
+      705: {
+        items: 2,
+      },
+      1200: {
+        items: 4,
+      },
+    },
+  });
 
-    // responsive: {
-    //   0: { items: 1 },
-    //   705: {
-    //     items: 2,
-    //   },
-    //   1200: {
-    //     items: 3,
-    //   },
-    // },
+  $(".latset-news-slider").owlCarousel({
+    loop: true,
+    items: 3,
+    dots: true,
+    margin: 30,
+    responsive: {
+      0: { items: 1 },
+      705: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
   });
 });
