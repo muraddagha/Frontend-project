@@ -74,6 +74,15 @@
         border: none;
         position: absolute;
         transition: 0.3s all ease-in-out;
+        i {
+          transition: 0.3s all ease-in-out;
+        }
+        &:hover {
+          i {
+            color: black;
+            transition: 0.3s all ease-in-out;
+          }
+        }
 
         &:focus {
           outline: none;

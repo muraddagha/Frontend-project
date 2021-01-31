@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  $(window).scroll(function () {
+    $(".navigation-bar").toggleClass(
+      "fixed-navigation-bar",
+      window.scrollY > 75
+    );
+  });
+  $(window).scroll(function () {
+    if (window.scrollY > 115) {
+      $(".scroll-up").fadeIn().css("display", "flex");
+    }
+    if (window.scrollY < 115) {
+      $(".scroll-up").fadeOut();
+    }
+  });
+  $(".scroll-up").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 100, "swing");
+  });
+
   $(".menu-btn").click(function () {
     $("body").addClass("mobile-active");
   });
