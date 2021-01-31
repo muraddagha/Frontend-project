@@ -173,6 +173,53 @@
     }
   }
 }
+@media only screen and(max-width:565px) {
+  #first {
+    .banner-content {
+      .first-content {
+        padding-top: 50px;
+        .subtitle {
+          display: block;
+          text-align: center;
+          margin-bottom: 1rem;
+          p {
+            padding: 15px 0;
+            margin-left: 0;
+            border-radius: 0;
+            background-color: transparent;
+          }
+        }
+        .buttons {
+          justify-content: center;
+        }
+        .background-word {
+          bottom: 35px;
+        }
+        .animated-title {
+          h1 {
+            font-size: 36px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:225px) {
+  #first {
+    .banner-content {
+      .first-content {
+        .subtitle {
+          span {
+            padding: 11px 10px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
 
 //animation
 @keyframes animationFramesTwo {
@@ -215,7 +262,6 @@
     transform: translate(0px, 0px) rotate(0deg);
   }
 }
-
 @keyframes border_animation {
   0% {
     transform: scale(1);

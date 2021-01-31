@@ -267,6 +267,7 @@ ul {
   visibility: hidden;
   left: 0;
   top: 0;
+  z-index: 99999;
 }
 
 .navigation-bar .mobile-menu .menu-overlay {
@@ -862,6 +863,40 @@ ul {
   }
 }
 
+@media only screen and (max-width: 565px) {
+  #first .banner-content .first-content {
+    padding-top: 50px;
+  }
+  #first .banner-content .first-content .subtitle {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  #first .banner-content .first-content .subtitle p {
+    padding: 15px 0;
+    margin-left: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  #first .banner-content .first-content .buttons {
+    justify-content: center;
+  }
+  #first .banner-content .first-content .background-word {
+    bottom: 35px;
+  }
+  #first .banner-content .first-content .animated-title h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 225px) {
+  #first .banner-content .first-content .subtitle span {
+    padding: 11px 10px;
+    font-size: 13px;
+  }
+}
+
 @keyframes animationFramesTwo {
   0% {
     transform: translate(0px, 0px) rotate(0deg) scale(1);
@@ -1038,6 +1073,9 @@ ul {
 
 #categories {
   padding-bottom: 3rem;
+}
+
+#categories .categories-slider {
   overflow: hidden;
 }
 
@@ -1539,6 +1577,7 @@ ul {
   padding-top: 110px;
   background-color: #f7f7f7;
   overflow: hidden;
+  padding-bottom: 40px;
 }
 
 #latset-news .section-title .background-title {
@@ -1801,7 +1840,7 @@ ul {
   background-color: #000a1f;
   position: absolute;
   width: 100%;
-  height: 113px;
+  height: 165px;
   top: 50%;
   left: 0;
   z-index: -1;
@@ -1972,25 +2011,25 @@ ul {
   max-width: 180px;
 }
 
-#footer .social-links {
+#footer .footer-content .social-links {
   display: flex;
   margin-top: 22px;
 }
 
-#footer .social-links li {
+#footer .footer-content .social-links li {
   margin-right: 15px;
 }
 
-#footer .social-links li a {
+#footer .footer-content .social-links li a {
   color: #494949;
   transition: 0.3s all ease-in-out;
 }
 
-#footer .social-links li a:hover {
+#footer .footer-content .social-links li a:hover {
   color: #ff5520;
 }
 
-#footer .instagram li {
+#footer .footer-content .instagram li {
   width: 75px;
   margin-bottom: 7px;
   position: relative;
@@ -2001,12 +2040,12 @@ ul {
   transition: 0.3s all ease-in-out;
 }
 
-#footer .instagram li a img {
+#footer .footer-content .instagram li a img {
   height: auto;
   max-width: 100%;
 }
 
-#footer .instagram li a i {
+#footer .footer-content .instagram li a i {
   opacity: 0;
   left: 0;
   top: 50%;
@@ -2019,7 +2058,7 @@ ul {
   transition: 0.3s all ease-in-out;
 }
 
-#footer .instagram li::before {
+#footer .footer-content .instagram li::before {
   content: "";
   top: 0;
   opacity: 0;
@@ -2030,11 +2069,39 @@ ul {
   transition: 0.3s all ease-in-out;
 }
 
-#footer .instagram li:hover::before {
+#footer .footer-content .instagram li:hover::before {
   opacity: 0.7;
 }
 
-#footer .instagram li:hover a i {
+#footer .footer-content .instagram li:hover a i {
   opacity: 0.7;
+}
+
+#footer .footer-copyright {
+  padding: 25px 0px;
+  text-align: center;
+}
+
+#footer .footer-copyright span {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  #footer .footer-content .btn-usual {
+    margin-bottom: 15px;
+  }
+  #footer .footer-content form {
+    margin-top: 0;
+  }
+  #footer .footer-content .contact {
+    display: flex;
+  }
+  #footer .footer-content .open-hours p {
+    margin-bottom: 10px;
+  }
+  .pl-40 {
+    padding-left: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
