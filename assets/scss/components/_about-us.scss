@@ -1,0 +1,57 @@
+#about-us {
+  padding: 110px 0px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .section-title {
+    text-align: left;
+    .background-title {
+      text-align: left;
+    }
+    .section-bigtitle {
+      margin-bottom: 0;
+      padding-top: 20px;
+    }
+    .section-text {
+      max-width: 500px;
+      line-height: 1.625;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e6e9f2;
+      color: #555555;
+    }
+  }
+  .about-video {
+    position: relative;
+    display: flex;
+    .about-video-text {
+      margin-left: 25px;
+      h6 {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 8px;
+      }
+      p {
+        color: #555555;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+    }
+    img {
+      border-radius: 5px;
+      max-width: 140px;
+    }
+    a {
+      color: white;
+      background-color: black;
+      padding: 7px 12px;
+      border-radius: 100%;
+      position: absolute;
+      left: 47px;
+      top: 23px;
+      border: solid 4px white;
+    }
+  }
+}

@@ -2160,6 +2160,14 @@ ul {
   z-index: 2;
 }
 
+#breadcrumb-banner h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-family: "Fira Sans", sans-serif;
+}
+
 #breadcrumb-banner::before {
   content: "";
   top: 0;
@@ -2191,5 +2199,161 @@ ul {
   font-weight: 900;
   color: #e3002a;
   font-family: "Font Awesome 5 Free";
+}
+
+#about-us {
+  padding: 110px 0px;
+}
+
+#about-us img {
+  max-width: 100%;
+  height: auto;
+}
+
+#about-us .section-title {
+  text-align: left;
+}
+
+#about-us .section-title .background-title {
+  text-align: left;
+}
+
+#about-us .section-title .section-bigtitle {
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+#about-us .section-title .section-text {
+  max-width: 500px;
+  line-height: 1.625;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e9f2;
+  color: #555555;
+}
+
+#about-us .about-video {
+  position: relative;
+  display: flex;
+}
+
+#about-us .about-video .about-video-text {
+  margin-left: 25px;
+}
+
+#about-us .about-video .about-video-text h6 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+#about-us .about-video .about-video-text p {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#about-us .about-video img {
+  border-radius: 5px;
+  max-width: 140px;
+}
+
+#about-us .about-video a {
+  color: white;
+  background-color: black;
+  padding: 7px 12px;
+  border-radius: 100%;
+  position: absolute;
+  left: 47px;
+  top: 23px;
+  border: solid 4px white;
+}
+
+#about-course {
+  background-image: url("/assets/img/about/background-gray.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0px;
+  background-color: #f7f7f7;
+}
+
+#about-course .section-title {
+  margin-bottom: 30px;
+}
+
+#about-course .section-title .background-title {
+  color: white;
+  opacity: 1;
+}
+
+#about-course .about-course-card {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.068);
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  z-index: 1;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+#about-course .about-course-card i {
+  font-size: 45px;
+  color: #0000fe;
+  transition: 0.3s all ease-in-out;
+  transition: all 300ms ease;
+}
+
+#about-course .about-course-card .about-course-card-text {
+  margin-left: 20px;
+}
+
+#about-course .about-course-card .about-course-card-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 11px;
+}
+
+#about-course .about-course-card .about-course-card-text h3 a {
+  color: #000;
+  transition: 0.3s all ease-in-out;
+}
+
+#about-course .about-course-card .about-course-card-text p {
+  font-size: 15px;
+  color: #555555;
+  transition: 0.3s all ease-in-out;
+}
+
+#about-course .about-course-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  transition: all 500ms ease-in-out;
+}
+
+#about-course .about-course-card:hover {
+  transform: translateY(-15px);
+}
+
+#about-course .about-course-card:hover .about-course-card-text a,
+#about-course .about-course-card:hover .about-course-card-text p {
+  color: white;
+}
+
+#about-course .about-course-card:hover i {
+  color: #ff5520;
+}
+
+#about-course .about-course-card:hover::before {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

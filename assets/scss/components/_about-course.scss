@@ -1,0 +1,75 @@
+#about-course {
+  background-image: url("/assets/img/about/background-gray.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 110px 0px;
+  background-color: $bg-gray;
+  .section-title {
+    .background-title {
+      color: white;
+      opacity: 1;
+    }
+    margin-bottom: 30px;
+  }
+  .about-course-card {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.068);
+    transition: 0.3s all ease-in-out;
+    position: relative;
+    z-index: 1;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    i {
+      font-size: 45px;
+      color: $color-blue;
+      transition: 0.3s all ease-in-out;
+      transition: all 300ms ease;
+    }
+    .about-course-card-text {
+      margin-left: 20px;
+      h3 {
+        font-size: 22px;
+        font-weight: 700;
+        padding-top: 11px;
+        a {
+          color: #000;
+          transition: 0.3s all ease-in-out;
+        }
+      }
+      p {
+        font-size: 15px;
+        color: #555555;
+        transition: 0.3s all ease-in-out;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: black;
+      z-index: -1;
+      transition: all 500ms ease-in-out;
+    }
+    &:hover {
+      transform: translateY(-15px);
+      .about-course-card-text {
+        a,
+        p {
+          color: white;
+        }
+      }
+      i {
+        color: $color-orange;
+      }
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
