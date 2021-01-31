@@ -8,6 +8,7 @@ ul {
   list-style: none;
   padding-inline-start: 0;
 }
+$breadcrumb-divider: (">>");
 .small-title {
   color: $text-blue;
 }
@@ -24,6 +25,7 @@ ul {
   }
   .owl-dots {
     text-align: center;
+    margin-top: 20px;
     .owl-dot.active {
       width: 38px;
       background-color: #0000fe;
