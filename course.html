@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ea7d0abe07.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/animated-headline.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/flaticon.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>About</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-bar">
+        <div class="container">
+          <div class="navbar-content">
+            <div class="navbar-logo">
+              <a href="/index.html">
+                <img src="/assets/img/logo head.png" alt="" />
+              </a>
+            </div>
+            <ul class="navbar-items">
+              <li class="dropdown">
+                <a href="/index.html">Home</a>
+                <ul class="dropdown-content">
+                  <li><a target="_blank" href="index.html">Home Page 1</a></li>
+                  <li>
+                    <a target="_blank" href="#">Home Page 2</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#">Home Page 3</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#">Home Page 4</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li class="dropdown">
+                <a href="">Course</a>
+                <ul class="dropdown-content">
+                  <li><a target="_blank" href="course.html">Course</a></li>
+                  <li>
+                    <a target="_blank" href="course-details.html"
+                      >Course Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="">Pages</a>
+                <ul class="dropdown-content">
+                  <li><a target="_blank" href="gallery.html">Gallery</a></li>
+                  <li><a target="_blank" href="contact.html">Contact</a></li>
+                  <li><a target="_blank" href="event.html">Event</a></li>
+                  <li>
+                    <a target="_blank" href="event-details.html"
+                      >Event Details</a
+                    >
+                  </li>
+                  <li><a target="_blank" href="faq.html">Faq</a></li>
+                  <li><a target="_blank" href="404.html">404</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="">Blog</a>
+                <ul class="dropdown-content">
+                  <li><a target="_blank" href="blog-1.html">Blog 1</a></li>
+                  <li><a target="_blank" href="blog-2.html">Blog 2</a></li>
+                  <li>
+                    <a target="_blank" href="blog-details-1.html"
+                      >Blog Details 1</a
+                    >
+                  </li>
+                  <li>
+                    <a target="_blank" href="blog-details-2.html"
+                      >Blog Details 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="">Instructor</a>
+                <ul class="dropdown-content">
+                  <li>
+                    <a target="_blank" href="instructor.html">Instructor</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="instructor-details.html"
+                      >Instructor Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-user">
+              <li>
+                <a href="">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+              <li>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fas fa-user"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <div class="menu-overlay"></div>
+          <div class="menu-content">
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <div class="mobile-logo">
+              <img src="/assets/img/logo foot.png" alt="" />
+            </div>
+            <ul class="mobile-navbar">
+              <li class="mobile-dropdown">
+                <a href="/index.html">Home</a>
+                <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li>
+                    <a href=""> Home Page 1 </a>
+                  </li>
+                  <li>
+                    <a href=""> Home Page 2 </a>
+                  </li>
+                  <li>
+                    <a href=""> Home Page 3 </a>
+                  </li>
+                  <li>
+                    <a href=""> Home Page 4 </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li class="mobile-dropdown">
+                <a>Course</a>
+                <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li><a target="_blank" href="course.html">Course</a></li>
+                  <li>
+                    <a target="_blank" href="course-details.html"
+                      >Course Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-dropdown">
+                <a>Pages</a>
+                <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li><a target="_blank" href="gallery.html">Gallery</a></li>
+                  <li><a target="_blank" href="contact.html">Contact</a></li>
+                  <li><a target="_blank" href="event.html">Event</a></li>
+                  <li>
+                    <a target="_blank" href="event-details.html"
+                      >Event Details</a
+                    >
+                  </li>
+                  <li><a target="_blank" href="faq.html">Faq</a></li>
+                  <li><a target="_blank" href="404.html">404</a></li>
+                </ul>
+              </li>
+              <li class="mobile-dropdown">
+                <a>Blog</a>
+                <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li><a target="_blank" href="blog-1.html">Blog 1</a></li>
+                  <li><a target="_blank" href="blog-2.html">Blog 2</a></li>
+                  <li>
+                    <a target="_blank" href="blog-details-1.html"
+                      >Blog Details 1</a
+                    >
+                  </li>
+                  <li>
+                    <a target="_blank" href="blog-details-2.html"
+                      >Blog Details 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-dropdown">
+                <a>Instructor</a>
+                <span class="fa fa-angle-down"></span>
+                <ul class="mobile-dropdown-content">
+                  <li>
+                    <a target="_blank" href="instructor.html">Instructor</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="instructor-details.html"
+                      >Instructor Details</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="breadcrumb-banner">
+        <h1>Courses</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Course</li>
+          </ol>
+        </nav>
+      </section>
+      <section id="course">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc1.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href="#"> User Experience Research & Design </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc2.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href="#"> Copyright Law in Music Course </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc3.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href=""> Master of Public Health Course </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc4.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href=""> User Experience Research & Design </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc5.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href=""> Digital Marketing and SMM Course </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc6.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href=""> Graphic Design and Logo Design Course </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc7.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href=""> Computer Basic Startup Ultricies Vitae </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="course-card">
+                <div class="course-card-header">
+                  <img src="/assets/img/card/pc8.jpg" alt="" />
+                </div>
+                <div class="course-card-body">
+                  <span class="price"
+                    >Course Fee:
+                    <p>$59</p>
+                    <strong>$39</strong></span
+                  >
+                  <h6 class="course-name">
+                    <a href=""> Molecular Biology, Biotechnology Courses </a>
+                  </h6>
+                  <div class="counts">
+                    <a>
+                      <i class="fas fa-file"></i>
+                      14 Lessons
+                    </a>
+                    <a>
+                      <i class="fas fa-user"></i>
+                      20 Students
+                    </a>
+                  </div>
+                </div>
+                <div class="course-card-footer">
+                  <div class="votes">
+                    <ul>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                    <span>(12) Votes</span>
+                  </div>
+                  <a class="course-btn"><i class="fas fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-usual"
+            >All Course
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="footer-logo">
+                <img src="/assets/img/logo foot.png" alt="" />
+              </div>
+              <p class="footer-text">
+                We work with a passion of taking challenges and creating new
+                ones in advertising sector.
+              </p>
+              <a href="#" class="btn-usual">ABOUT US</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h3 class="footer-title">Newsletter</h3>
+              <p class="footer-text">
+                Subscribe our newsletter to get our latest update & news
+              </p>
+              <form action="#">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Your mail adress"
+                />
+                <button type="submit">
+                  <i class="far fa-paper-plane"></i>
+                </button>
+              </form>
+              <ul class="social-links">
+                <li>
+                  <a href="https://www.facebook.com/"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/?lang=en"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 pl-40">
+              <h3 class="footer-title">Official info:</h3>
+              <ul class="contact">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <a href="#">30 Commercial Road Fratton, Australia</a>
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i><a href="#">1-888-452-1505</a>
+                </li>
+              </ul>
+              <div class="open-hours">
+                <span> Open Hours: </span>
+                <p>
+                  Mon - Sat: 8 am - 5 pm, <br />
+                  Sunday: CLOSED
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h3 class="footer-title">Instagram</h3>
+              <ul class="instagram">
+                <li>
+                  <a href="#"
+                    ><img src="/assets/img/instagram/ins1.jpg" alt="" />
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/assets/img/instagram/ins2.jpg" alt="" />
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/assets/img/instagram/ins3.jpg" alt="" />
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/assets/img/instagram/ins4.jpg" alt="" />
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/assets/img/instagram/ins5.jpg" alt="" />
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="/assets/img/instagram/ins6.jpg" alt="" />
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span>© 2021 Yle - Education. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-head-content">
+              <a href="#">
+                <img src="/assets/img/logo foot.png" alt="" />
+              </a>
+              <p>
+                Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in
+                voluptate velit esse
+              </p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-signup-login">
+              <ul class="modal-signup-login-btn">
+                <li class="login-btn">Login</li>
+                <li class="signup-btn">Sign Up</li>
+              </ul>
+              <div class="modal-tab-content">
+                <div class="login-tab">
+                  <form action="#">
+                    <input type="text" placeholder="Username or email" />
+                    <input type="password" placeholder="Password" />
+                    <div class="login-label">
+                      <span>
+                        <input type="checkbox" />
+                        Remember me
+                      </span>
+                      <a href="#">Forget Password?</a>
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                  <p>
+                    Don’t have any account?
+                    <a href="#">Signup</a>
+                  </p>
+                </div>
+                <div class="signup-tab">
+                  <form action="#">
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                    <input type="text" placeholder="Email Adresses" />
+                    <input type="text" placeholder="Username" />
+                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Confrim Password" />
+                    <div class="login-label">
+                      <span>
+                        <input type="checkbox" />
+                        By clicking signup you are agree to our terms of service
+                      </span>
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                  <p>
+                    Already have an account?
+                    <a href="#">Log in</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-up">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/assets/js/parallax-scroll.js"></script>
+    <script src="/assets/js/animated-headline.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
