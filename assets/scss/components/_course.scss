@@ -124,6 +124,30 @@
       }
     }
   }
+  .course-card.course-about {
+    .course-card-header {
+      img {
+        width: 100%;
+      }
+    }
+    .course-card-body {
+      .price {
+        justify-content: space-between;
+        .course-amount {
+          display: flex;
+          justify-content: flex-end;
+          align-items: baseline;
+        }
+      }
+      .course-name {
+        font-size: 22px;
+        height: 80px;
+      }
+    }
+    .course-card-footer {
+      justify-content: space-between;
+    }
+  }
   .btn-usual {
     background-color: $color-blue;
     height: 50px;
