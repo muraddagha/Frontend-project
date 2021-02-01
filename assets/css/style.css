@@ -2513,4 +2513,92 @@ ul {
 #filter-search form button.btn-usual:focus {
   outline: none;
 }
+
+#instructor {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+#instructor .teacher-card {
+  text-align: center;
+}
+
+#instructor .teacher-card .teacher-img {
+  position: relative;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+#instructor .teacher-card .teacher-img img {
+  border-radius: 100%;
+  max-width: 100%;
+}
+
+#instructor .teacher-card .teacher-info {
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 6px;
+  padding: 70px 15px 15px;
+  background-color: #fff;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.048);
+  position: relative;
+  z-index: 2;
+  transition: 0.4s all ease-in-out;
+}
+
+#instructor .teacher-card .teacher-info h6 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.4s all ease-in-out;
+  font-family: "Fira Sans", sans-serif;
+  transition: 0.4s all ease-in-out;
+}
+
+#instructor .teacher-card .teacher-info span {
+  color: #000000;
+  font-weight: 700;
+  padding: 5px 0px;
+  font-family: "Fira Sans", sans-serif;
+  display: block;
+  font-size: 14px;
+  transition: 0.4s all ease-in-out;
+}
+
+#instructor .teacher-card .teacher-info p {
+  color: #888888;
+  transition: 0.4s all ease-in-out;
+}
+
+#instructor .teacher-card .teacher-info::after {
+  left: 0;
+  right: 0;
+  width: 90%;
+  content: "";
+  height: 10px;
+  z-index: -1;
+  bottom: -8px;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 6px;
+  background-color: #fbfbff;
+  transition: 0.4s all ease-in-out;
+}
+
+#instructor .teacher-card:hover .teacher-info {
+  background-color: #ff5520;
+}
+
+#instructor .teacher-card:hover .teacher-info h6,
+#instructor .teacher-card:hover .teacher-info span,
+#instructor .teacher-card:hover .teacher-info p {
+  color: white;
+}
+
+#instructor .teacher-card:hover .teacher-info::after {
+  background-color: #ff5520;
+  opacity: 0.8;
+}
 /*# sourceMappingURL=style.css.map */
