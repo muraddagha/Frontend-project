@@ -59,6 +59,9 @@ $breadcrumb-divider: (">>");
   z-index: 20;
   color: #ffffff;
 }
+.bg-gray {
+  background-color: #f2f2f4 !important;
+}
 
 @media only screen and (min-width: 1400px) {
   .container {
