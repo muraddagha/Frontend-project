@@ -4,7 +4,7 @@
 .navigation-bar {
   background-color: white;
   display: flex;
-  padding: 1rem 15px 10px;
+  padding: 1rem 15px 0;
 
   .navbar-content {
     width: 100%;
@@ -21,6 +21,7 @@
       padding-top: 20px;
       margin-left: 30px;
       padding-left: 5px;
+      margin-bottom: 0;
       li {
         margin-right: 5rem;
         position: relative;
@@ -58,6 +59,7 @@
         a {
           color: #000000;
           font-weight: 700;
+          padding-bottom: 25px;
           &::after {
             content: "";
             top: 30px;
@@ -83,11 +85,11 @@
           }
         }
         .dropdown-content {
+          z-index: 3;
           position: absolute;
           top: 65px;
           left: 0;
           opacity: 0;
-          z-index: 2;
           margin: 0px;
           padding: 0px;
           height: auto;
