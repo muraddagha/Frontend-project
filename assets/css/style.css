@@ -555,7 +555,7 @@ ul {
 
 @media only screen and (max-width: 396px) {
   .section-title .background-title {
-    font-size: 64px;
+    font-size: 50px;
   }
   .section-title .section-bigtitle {
     font-size: 24px;
@@ -2600,5 +2600,108 @@ ul {
 #instructor .teacher-card:hover .teacher-info::after {
   background-color: #ff5520;
   opacity: 0.8;
+}
+
+#google-map {
+  padding: 100px 0px 0px;
+  background-color: #f7f7f7;
+}
+
+#contact-content {
+  padding: 100px 0px 0px;
+  background-color: #f7f7f7;
+}
+
+#contact-content .contact-card {
+  text-align: center;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  height: 100%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#contact-content .contact-card .contact-icon {
+  margin-bottom: 30px;
+}
+
+#contact-content .contact-card .contact-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+#contact-content .contact-card h5 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#contact-content .contact-card p {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 0;
+}
+
+#contact-content .write-us {
+  padding: 100px 0px 30px;
+  text-align: center;
+}
+
+#contact-content .write-us h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 35px;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+
+#contact-content .write-us form {
+  background-color: white;
+  padding: 40px;
+}
+
+#contact-content .write-us form input {
+  height: 50px;
+  width: 100%;
+  border: none;
+  margin: 0px 15px;
+  padding-left: 20px;
+  border-radius: 8px;
+  background-color: #efeff0;
+}
+
+#contact-content .write-us form textarea {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #efeff0;
+  border: none;
+  padding: 20px;
+  margin: 5px 15px;
+  height: 170px;
+}
+
+#contact-content .write-us form button {
+  width: 100%;
+  background-color: #0000fe;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 8px;
+  margin: 5px 15px;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#contact-content .write-us form button i {
+  margin-left: 5px;
+}
+
+#contact-content .write-us form button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

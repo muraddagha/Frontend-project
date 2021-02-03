@@ -1,0 +1,90 @@
+#google-map {
+  padding: 100px 0px 0px;
+  background-color: $bg-gray;
+}
+#contact-content {
+  padding: 100px 0px 0px;
+  background-color: $bg-gray;
+  .contact-card {
+    text-align: center;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    height: 100%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    .contact-icon {
+      margin-bottom: 30px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    h5 {
+      color: #000;
+      font-size: 20px;
+      font-weight: 700;
+      padding-bottom: 10px;
+      font-family: $secondary-font;
+    }
+    p {
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 0;
+    }
+  }
+
+  .write-us {
+    padding: 100px 0px 30px;
+
+    text-align: center;
+    h1 {
+      color: #000;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      padding-bottom: 35px;
+      font-family: $secondary-font;
+      margin: 0;
+    }
+    form {
+      background-color: white;
+      padding: 40px;
+      input {
+        height: 50px;
+        width: 100%;
+        border: none;
+        margin: 0px 15px;
+        padding-left: 20px;
+        border-radius: 8px;
+        background-color: #efeff0;
+      }
+      textarea {
+        width: 100%;
+        border-radius: 8px;
+        background-color: #efeff0;
+        border: none;
+        padding: 20px;
+        margin: 5px 15px;
+        height: 170px;
+      }
+      button {
+        width: 100%;
+        background-color: $color-blue;
+        border: none;
+        color: white;
+        height: 50px;
+        border-radius: 8px;
+        margin: 5px 15px;
+        font-weight: 700;
+        font-family: $secondary-font;
+        i {
+          margin-left: 5px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
