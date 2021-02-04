@@ -1,0 +1,138 @@
+#course-details {
+  padding: 80px 0;
+  background-color: $bg-gray;
+  .course-details-content {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .tabs {
+      background-color: white;
+      padding: 30px 35px;
+
+      .tabs-buttons {
+        background-color: $bg-gray;
+        margin-bottom: 25px;
+        ul {
+          justify-content: space-between;
+          border: none;
+          li {
+            a {
+              border: none;
+              background-color: transparent;
+              color: #000000;
+              font-size: 18px;
+              font-weight: 700;
+              padding: 25px 30px;
+              border-radius: 0;
+            }
+            a.active {
+              background-color: $color-orange;
+              color: white;
+            }
+          }
+        }
+      }
+      .tab-content {
+        #overview {
+          h4 {
+            color: #000;
+            font-size: 24px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            font-family: $secondary-font;
+          }
+          .overview-text {
+            margin-bottom: 35px;
+            p {
+              color: #555555;
+              font-size: 16px;
+              line-height: 1.625;
+            }
+          }
+          .overview-content {
+            .icon-title {
+              //   display: flex;
+              img {
+                margin-right: 10px;
+              }
+              h5 {
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 500;
+                font-family: $secondary-font;
+                a {
+                  color: #000000;
+                }
+              }
+            }
+            p {
+              color: #555555;
+              font-size: 15px;
+              line-height: 1.6;
+              max-width: 330px;
+            }
+            .certificate {
+              p {
+                margin-bottom: 0;
+              }
+              a.link {
+                color: #000;
+                font-weight: 700;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        #curriculum {
+          .accordion-item {
+            margin-bottom: 10px;
+
+            .accordion-header {
+              background-color: $bg-gray;
+              button {
+                border: none;
+                position: relative;
+                background-color: transparent;
+                width: 100%;
+                padding: 13px 12px 12px 50px;
+                background-color: #f2f2f4;
+                outline: none;
+                .lesson-time {
+                  float: right;
+                  display: flex;
+                  span {
+                    font-weight: 500;
+                    margin-right: 25px;
+                    font-size: 15px;
+                  }
+                }
+                h3 {
+                  color: #000;
+                  float: left;
+                  font-size: 20px;
+                  font-weight: 700;
+                  font-family: $secondary-font;
+                  margin-bottom: 0;
+                }
+                &::after {
+                  top: -10px;
+                  left: 15px;
+                  color: #000;
+                  font-size: 50px;
+                  content: "-";
+                  position: absolute;
+                }
+              }
+              button.collapsed::after {
+                top: 0;
+                content: "+";
+                font-size: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
