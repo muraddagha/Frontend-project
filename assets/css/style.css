@@ -104,6 +104,137 @@ ul {
   color: white;
 }
 
+.review-content {
+  padding-bottom: 20px;
+}
+
+.review-content .review-comment .review-img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.review-content .review-comment .review-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.review-content .review-comment .review-text {
+  overflow: hidden;
+}
+
+.review-content .review-comment .review-text .name-star {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-content .review-comment .review-text .name-star .stars ul {
+  display: flex;
+}
+
+.review-content .review-comment .review-text .name-star .stars ul li {
+  color: #ebc90a;
+  margin-right: 5px;
+}
+
+.review-content .review-comment .review-text .name-star .stars ul li.unchecked {
+  color: #d3d3d3;
+}
+
+.review-content .review-comment .review-text .name-star .review-author {
+  margin-bottom: 15px;
+}
+
+.review-content .review-comment .review-text .name-star .review-author h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 0;
+}
+
+.review-content .review-comment .review-text .name-star .review-author span {
+  font-size: 14px;
+  color: #555555;
+}
+
+.review-content .review-comment .review-text p {
+  color: #555555;
+  font-size: 16px;
+}
+
+.review-content .review-comment .review-text .btn-reply {
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  line-height: 40px;
+  display: inline-block;
+  background-color: #ff5520;
+  text-align: center;
+}
+
+.add-review {
+  padding-top: 30px;
+  position: relative;
+}
+
+.add-review::before {
+  top: 0;
+  left: -45px;
+  height: 40px;
+  width: 111%;
+  content: "";
+  position: absolute;
+  background-color: #f7f7f7;
+}
+
+.add-review h3 {
+  padding-top: 50px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.add-review form input {
+  width: 266px;
+  height: 45px;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #efeff0;
+}
+
+.add-review form textarea {
+  width: 100%;
+  border: none;
+  height: 165px;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #efeff0;
+}
+
+.add-review form button {
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  border: none;
+  font-weight: 700;
+  border-radius: 40px;
+  background-color: #0000fe;
+  outline: none;
+}
+
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -1675,7 +1806,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item,
-#latset-news .blog .news-item {
+#latset-news .blog .news-item,
+#latset-news .blog-details .news-item {
   margin: 0 auto;
   max-width: 370px;
   background-color: white;
@@ -1684,23 +1816,27 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-img-date,
-#latset-news .blog .news-item .news-img-date {
+#latset-news .blog .news-item .news-img-date,
+#latset-news .blog-details .news-item .news-img-date {
   position: relative;
 }
 
 #latset-news .latset-news-slider .news-item .news-img-date .news-img,
-#latset-news .blog .news-item .news-img-date .news-img {
+#latset-news .blog .news-item .news-img-date .news-img,
+#latset-news .blog-details .news-item .news-img-date .news-img {
   overflow: hidden;
 }
 
 #latset-news .latset-news-slider .news-item .news-img-date .news-img img,
-#latset-news .blog .news-item .news-img-date .news-img img {
+#latset-news .blog .news-item .news-img-date .news-img img,
+#latset-news .blog-details .news-item .news-img-date .news-img img {
   max-width: 100%;
   transition: 0.4s all ease-in-out;
 }
 
 #latset-news .latset-news-slider .news-item .news-img-date .date,
-#latset-news .blog .news-item .news-img-date .date {
+#latset-news .blog .news-item .news-img-date .date,
+#latset-news .blog-details .news-item .news-img-date .date {
   position: absolute;
   left: 25px;
   bottom: -30px;
@@ -1715,7 +1851,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-img-date .date span,
-#latset-news .blog .news-item .news-img-date .date span {
+#latset-news .blog .news-item .news-img-date .date span,
+#latset-news .blog-details .news-item .news-img-date .date span {
   color: #fff;
   font-size: 30px;
   font-weight: 700;
@@ -1725,7 +1862,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-img-date .date span:last-child,
-#latset-news .blog .news-item .news-img-date .date span:last-child {
+#latset-news .blog .news-item .news-img-date .date span:last-child,
+#latset-news .blog-details .news-item .news-img-date .date span:last-child {
   display: block;
   font-size: 16px;
   font-weight: 400;
@@ -1733,7 +1871,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-img-date::before,
-#latset-news .blog .news-item .news-img-date::before {
+#latset-news .blog .news-item .news-img-date::before,
+#latset-news .blog-details .news-item .news-img-date::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1745,18 +1884,21 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text,
-#latset-news .blog .news-item .news-text {
+#latset-news .blog .news-item .news-text,
+#latset-news .blog-details .news-item .news-text {
   box-shadow: 0px 12px 35px 0px rgba(12, 12, 12, 0.007);
   padding: 45px 25px;
 }
 
 #latset-news .latset-news-slider .news-item .news-text .comments,
-#latset-news .blog .news-item .news-text .comments {
+#latset-news .blog .news-item .news-text .comments,
+#latset-news .blog-details .news-item .news-text .comments {
   color: #0000fe;
 }
 
 #latset-news .latset-news-slider .news-item .news-text .comments a,
-#latset-news .blog .news-item .news-text .comments a {
+#latset-news .blog .news-item .news-text .comments a,
+#latset-news .blog-details .news-item .news-text .comments a {
   font-size: 13px;
   font-weight: 700;
   margin-right: 25px;
@@ -1766,7 +1908,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text .comments a:first-child::after,
-#latset-news .blog .news-item .news-text .comments a:first-child::after {
+#latset-news .blog .news-item .news-text .comments a:first-child::after,
+#latset-news .blog-details .news-item .news-text .comments a:first-child::after {
   content: "";
   width: 2px;
   background-color: #0000fe;
@@ -1778,7 +1921,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text h3,
-#latset-news .blog .news-item .news-text h3 {
+#latset-news .blog .news-item .news-text h3,
+#latset-news .blog-details .news-item .news-text h3 {
   margin-bottom: 15px;
   position: relative;
   padding: 10px 0px 15px;
@@ -1786,7 +1930,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text h3 a,
-#latset-news .blog .news-item .news-text h3 a {
+#latset-news .blog .news-item .news-text h3 a,
+#latset-news .blog-details .news-item .news-text h3 a {
   color: #000;
   transition: 0.3s all ease-in-out;
   font-family: "Fira Sans", sans-serif;
@@ -1795,7 +1940,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text h3::before,
-#latset-news .blog .news-item .news-text h3::before {
+#latset-news .blog .news-item .news-text h3::before,
+#latset-news .blog-details .news-item .news-text h3::before {
   left: 0;
   bottom: -1px;
   height: 3px;
@@ -1806,7 +1952,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text p,
-#latset-news .blog .news-item .news-text p {
+#latset-news .blog .news-item .news-text p,
+#latset-news .blog-details .news-item .news-text p {
   padding-bottom: 14px;
   color: #555555;
   font-size: 16px;
@@ -1814,7 +1961,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text .read-more,
-#latset-news .blog .news-item .news-text .read-more {
+#latset-news .blog .news-item .news-text .read-more,
+#latset-news .blog-details .news-item .news-text .read-more {
   color: #000;
   display: inline-block;
   font-size: 14px;
@@ -1824,7 +1972,8 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text .read-more::after,
-#latset-news .blog .news-item .news-text .read-more::after {
+#latset-news .blog .news-item .news-text .read-more::after,
+#latset-news .blog-details .news-item .news-text .read-more::after {
   left: 0;
   bottom: 0;
   content: "";
@@ -1836,28 +1985,348 @@ ul {
 }
 
 #latset-news .latset-news-slider .news-item .news-text .read-more:hover,
-#latset-news .blog .news-item .news-text .read-more:hover {
+#latset-news .blog .news-item .news-text .read-more:hover,
+#latset-news .blog-details .news-item .news-text .read-more:hover {
   color: #0000fe;
 }
 
 #latset-news .latset-news-slider .news-item .news-text .read-more:hover::after,
-#latset-news .blog .news-item .news-text .read-more:hover::after {
+#latset-news .blog .news-item .news-text .read-more:hover::after,
+#latset-news .blog-details .news-item .news-text .read-more:hover::after {
   width: 100%;
 }
 
 #latset-news .latset-news-slider .news-item:hover,
-#latset-news .blog .news-item:hover {
+#latset-news .blog .news-item:hover,
+#latset-news .blog-details .news-item:hover {
   box-shadow: 0px 43px 35px 0px rgba(12, 12, 12, 0.11);
 }
 
 #latset-news .latset-news-slider .news-item:hover .news-img-date img,
-#latset-news .blog .news-item:hover .news-img-date img {
+#latset-news .blog .news-item:hover .news-img-date img,
+#latset-news .blog-details .news-item:hover .news-img-date img {
   transform: scale(1.2) rotate(5deg);
 }
 
 #latset-news .latset-news-slider .news-item:hover .news-text h3 a,
-#latset-news .blog .news-item:hover .news-text h3 a {
+#latset-news .blog .news-item:hover .news-text h3 a,
+#latset-news .blog-details .news-item:hover .news-text h3 a {
   color: #ff5520;
+}
+
+.blog-details .news-item {
+  max-width: none !important;
+}
+
+.blog-details .news-item .news-img-date .news-img img {
+  width: 100%;
+}
+
+.blog-details .news-item .news-img-date::before {
+  content: none !important;
+}
+
+.blog-details .news-item .news-text {
+  padding: 40px !important;
+  margin-bottom: 30px;
+  box-shadow: none !important;
+}
+
+.blog-details .news-item .news-text .comments {
+  margin-bottom: 30px;
+}
+
+.blog-details .news-item .news-text article {
+  margin-bottom: 30px;
+  color: #555555;
+}
+
+.blog-details .news-item .news-text blockquote {
+  font-size: 21px;
+  margin-bottom: 35px;
+  padding: 20px 0px 20px 60px;
+  font-style: italic;
+  border-left: 4px solid #ff5520;
+  color: #555555;
+}
+
+.blog-details .news-item .news-text .tags a {
+  margin-right: 7px;
+  padding: 10px 12px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  color: #555555;
+}
+
+.blog-details .news-item .news-text .social-links {
+  align-items: center;
+}
+
+.blog-details .news-item .news-text .social-links span {
+  color: #000;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.blog-details .news-item .news-text .social-links a {
+  width: 42px;
+  color: #fff;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 8px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  transition: 0.3s all ease-in-out;
+}
+
+.blog-details .news-item .news-text .social-links a:hover {
+  transform: scale(1.1);
+}
+
+.blog-details .news-item .news-text .social-links a:nth-child(2) {
+  background-color: #3b5998;
+}
+
+.blog-details .news-item .news-text .social-links a:nth-child(3) {
+  background-color: #1da1f2;
+}
+
+.blog-details .news-item .news-text .social-links a:nth-child(4) {
+  background-color: #0077b5;
+}
+
+.blog-details .news-item .post-changer {
+  padding: 40px;
+  height: 100%;
+  position: relative;
+  padding-top: 55px;
+}
+
+.blog-details .news-item .post-changer::before {
+  top: 0;
+  left: -45px;
+  height: 40px;
+  width: 111%;
+  content: "";
+  position: absolute;
+  background-color: #f7f7f7;
+}
+
+.blog-details .news-item .post-changer .post-name-left,
+.blog-details .news-item .post-changer .post-name-right {
+  padding-top: 30px;
+}
+
+.blog-details .news-item .post-changer .post-name-left a,
+.blog-details .news-item .post-changer .post-name-right a {
+  display: block;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ff5520;
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.blog-details .news-item .post-changer .post-name-left a i,
+.blog-details .news-item .post-changer .post-name-right a i {
+  color: blue;
+}
+
+.blog-details .news-item .post-changer .post-name-left span,
+.blog-details .news-item .post-changer .post-name-right span {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.blog-details .news-item .post-changer .post-name-left {
+  text-align: left;
+}
+
+.blog-details .news-item .post-changer .post-name-left a i {
+  margin-right: 10px;
+}
+
+.blog-details .news-item .post-changer .post-name-right {
+  text-align: right;
+}
+
+.blog-details .news-item .post-changer .post-name-right a i {
+  margin-left: 10px;
+}
+
+.blog-details .news-item .post-changer.bor {
+  border-right: 2px solid #e5e5e5;
+}
+
+.blog-details .news-item .review-content {
+  padding: 40px;
+  position: relative;
+  padding-top: 60px;
+}
+
+.blog-details .news-item .review-content::before {
+  top: 0;
+  left: -45px;
+  height: 40px;
+  width: 111%;
+  content: "";
+  position: absolute;
+  background-color: #f7f7f7;
+}
+
+.blog-details .news-item .review-content h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.blog-details .news-item .review-content .reply.review-comment {
+  margin-left: 100px;
+}
+
+.blog-details .news-item .add-review form input {
+  width: 262px;
+}
+
+.blog-details .news-item:hover {
+  box-shadow: none !important;
+}
+
+.blog-details .news-item:hover .news-img-date img {
+  transform: none !important;
+}
+
+.right-side .search-box {
+  margin-bottom: 40px;
+}
+
+.right-side .search-box form {
+  display: flex;
+}
+
+.right-side .search-box form input {
+  width: 80%;
+  height: 48px;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 0;
+}
+
+.right-side .search-box form button {
+  top: 0;
+  right: 0;
+  width: 20%;
+  color: #fff;
+  border: none;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #ff5520;
+}
+
+.right-side .right-side-content {
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 35px 30px;
+}
+
+.right-side .right-side-content h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-left: 15px;
+}
+
+.right-side .right-side-content ul li {
+  margin-bottom: 5px;
+}
+
+.right-side .right-side-content ul li a {
+  color: #000;
+  font-weight: 700;
+  padding-left: 15px;
+  position: relative;
+  transition: 0.4s all ease-in-out;
+}
+
+.right-side .right-side-content ul li a:hover {
+  margin-left: 15px;
+}
+
+.right-side .right-side-content ul li a::before {
+  color: #ff5520;
+  font-size: 14px;
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+
+.right-side .right-side-content .recent-post {
+  display: flex;
+  border: 1px solid #eef1fe;
+  margin-bottom: 25px;
+}
+
+.right-side .right-side-content .recent-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-side .right-side-content .recent-post .date-link {
+  margin-left: 15px;
+}
+
+.right-side .right-side-content .recent-post .date-link span {
+  color: #888888;
+  font-size: 14px;
+  display: block;
+}
+
+.right-side .right-side-content .recent-post .date-link a {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.right-side .right-side-content .popular-tags a {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 10px 12px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  color: #555555;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  #latset-news .blog-details .news-item .review-content .reply.review-comment {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  #latset-news .blog-details .news-item .review-content .review-comment .review-text .name-star {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #latset-news .blog-details .news-item .review-content .review-comment .review-img {
+    float: none;
+    margin-bottom: 15px;
+  }
 }
 
 #subscribe-form {
@@ -3001,132 +3470,6 @@ ul {
   margin-bottom: 30px;
   color: #555555;
   font-size: 16px;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content {
-  padding-bottom: 20px;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-img {
-  float: left;
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-right: 20px;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text {
-  overflow: hidden;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .name-star {
-  display: flex;
-  justify-content: space-between;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .name-star .stars ul {
-  display: flex;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .name-star .stars ul li {
-  color: #ebc90a;
-  margin-right: 5px;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .name-star .stars ul li.unchecked {
-  color: #d3d3d3;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .name-star .review-author {
-  margin-bottom: 15px;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .name-star .review-author h3 {
-  color: #000;
-  font-size: 20px;
-  font-weight: 500;
-  padding-bottom: 5px;
-  font-family: "Fira Sans", sans-serif;
-  margin-bottom: 0;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .name-star .review-author span {
-  font-size: 14px;
-  color: #555555;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text p {
-  color: #555555;
-  font-size: 16px;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .review-content .review-comment .review-text .btn-reply {
-  color: #fff;
-  height: 40px;
-  width: 100px;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 30px;
-  line-height: 40px;
-  display: inline-block;
-  background-color: #ff5520;
-  text-align: center;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .add-review {
-  padding-top: 30px;
-  position: relative;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .add-review::before {
-  top: 0;
-  left: -45px;
-  height: 40px;
-  width: 111%;
-  content: "";
-  position: absolute;
-  background-color: #f7f7f7;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .add-review h3 {
-  padding-top: 50px;
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
-  padding-bottom: 10px;
-  font-family: "Fira Sans", sans-serif;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .add-review form input {
-  width: 266px;
-  height: 45px;
-  border: none;
-  padding-left: 15px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  background-color: #efeff0;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .add-review form textarea {
-  width: 100%;
-  border: none;
-  height: 165px;
-  padding: 15px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  background-color: #efeff0;
-}
-
-#course-details .course-details-content .tabs .tab-content #reviews .add-review form button {
-  color: #fff;
-  width: 170px;
-  height: 50px;
-  border: none;
-  font-weight: 700;
-  border-radius: 40px;
-  background-color: #0000fe;
-  outline: none;
 }
 
 #course-details .course-details-content .tabs .tab-content #view-offline .view-offline-content h3 {
