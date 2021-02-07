@@ -4,6 +4,18 @@ $(document).ready(function () {
     $("#loader").fadeOut("slow", function () {
       $(this).remove();
     });
+    $(function () {
+      if ($(".wow").length) {
+        var wow = new WOW({
+          boxClass: "wow",
+          animateClass: "animated",
+          offset: 0,
+          mobile: true,
+          live: true,
+        });
+        wow.init();
+      }
+    });
   });
   $(window).scroll(function () {
     $(".navigation-bar").toggleClass(
@@ -115,19 +127,5 @@ $(document).ready(function () {
         items: 3,
       },
     },
-  });
-  $(window).on("load", function () {
-    $(function () {
-      if ($(".wow").length) {
-        var wow = new WOW({
-          boxClass: "wow",
-          animateClass: "animated",
-          offset: 0,
-          mobile: true,
-          live: true,
-        });
-        wow.init();
-      }
-    });
   });
 });
