@@ -258,6 +258,10 @@
                 padding: 10px 30px 10px 0;
                 text-transform: capitalize;
                 border-bottom: 1px solid rgba(78, 78, 78, 0.41);
+                &:hover {
+                  color: #e3002a;
+                  background-color: transparent;
+                }
               }
             }
           }

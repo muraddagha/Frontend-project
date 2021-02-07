@@ -562,6 +562,11 @@ ul {
   border-bottom: 1px solid rgba(78, 78, 78, 0.41);
 }
 
+.navigation-bar .mobile-menu .menu-content .mobile-navbar .mobile-dropdown .mobile-dropdown-content li a:hover {
+  color: #e3002a;
+  background-color: transparent;
+}
+
 .fixed-navigation-bar {
   position: fixed;
   top: 0;
