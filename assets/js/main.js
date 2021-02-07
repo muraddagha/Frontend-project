@@ -1,5 +1,10 @@
 // new WOW().init();
 $(document).ready(function () {
+  $(window).on("load", function () {
+    $("#loader").fadeOut("slow", function () {
+      $(this).remove();
+    });
+  });
   $(window).scroll(function () {
     $(".navigation-bar").toggleClass(
       "fixed-navigation-bar",
