@@ -67,6 +67,14 @@
           visibility: visible;
           bottom: -30px;
           opacity: 1;
+          span {
+            transition: 300ms;
+          }
+          &:hover {
+            span {
+              transform: rotate(130deg);
+            }
+          }
         }
         .category-item-header {
           .category-icon {

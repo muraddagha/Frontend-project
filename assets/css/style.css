@@ -1349,6 +1349,14 @@ ul {
   opacity: 1;
 }
 
+#categories .categories-slider .category-item:hover .item-hover-link span {
+  transition: 300ms;
+}
+
+#categories .categories-slider .category-item:hover .item-hover-link:hover span {
+  transform: rotate(130deg);
+}
+
 #categories .categories-slider .category-item:hover .category-item-header .category-icon {
   transform: rotateY(360deg);
 }

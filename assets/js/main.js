@@ -1,3 +1,4 @@
+// new WOW().init();
 $(document).ready(function () {
   $(window).scroll(function () {
     $(".navigation-bar").toggleClass(
@@ -52,7 +53,6 @@ $(document).ready(function () {
 
   $('[data-fancybox="video"]').fancybox({
     buttons: ["share", "fullScreen", "close"],
-
     autoplay: "autoplay",
     iframe: {
       css: {
@@ -110,5 +110,19 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+  $(window).on("load", function () {
+    $(function () {
+      if ($(".wow").length) {
+        var wow = new WOW({
+          boxClass: "wow",
+          animateClass: "animated",
+          offset: 0,
+          mobile: true,
+          live: true,
+        });
+        wow.init();
+      }
+    });
   });
 });
